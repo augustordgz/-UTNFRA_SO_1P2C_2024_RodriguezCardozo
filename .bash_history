@@ -830,3 +830,25 @@ history -a
 cd repogit/UTNFRA_SO_1P2C_2024_RodriguezCardozo/
 ls
 cp $HOME/.bash_history
+cp $HOME/.bash_history .
+ls
+ls -l
+ls -la
+git add .
+git commit -m "ADD: Agrego el archivo .bash_history al repositorio"
+git push
+exit
+cd repogit/UTNFRA_SO_1P2C_2024_RodriguezCardozo/
+cd RTA_SCRIPT_Examen_20241001/
+ls
+echo "mkdir -p $HOME/Examenes-UTN/{{alumno_1,alumno_2,alumno_3}/parcial_{1..3},profesores}" > Punto_A.sh
+tree \$HOME/Examenes-UTN/
+tree $HOME/Examenes-UTN/
+echo "tree $HOME/Examenes-UTN/" >> Punto_A.sh
+cat Punto_A.sh
+echo "mkdir -p $HOME/Estructura_Asimetrica/{clientes/cartas{1..100},correo/{carteros{1..10},cartas{1..100}}}" > Punto_D.sh
+echo "tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4" >> Punto_D.sh
+echo "cd UTNFRA_SO_1P2C_2024_RodriguezCardozo/RTA_ARCHIVOS_Examen_20241001" > Punto_F.sh
+nano Punto_F.sh
+nano Punto_B.sh
+cd ..
